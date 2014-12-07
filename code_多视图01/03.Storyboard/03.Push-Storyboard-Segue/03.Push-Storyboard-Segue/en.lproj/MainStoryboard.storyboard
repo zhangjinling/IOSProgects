@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3103" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="h5e-kn-0Iz">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - Root View Controller-->
+        <scene sceneID="2Xs-A9-5gs">
+            <objects>
+                <tableViewController id="7sz-Ch-VN6" customClass="ViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="yGn-r7-Y5i">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="d18-94-NG1">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="kqG-u9-xVS">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="TGZ-19-ah2"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RA5-aa-gfe">
+                            <connections>
+                                <segue destination="agh-8j-PDm" kind="push" identifier="AddPerson" id="cIF-pw-Z0d"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PjW-Vc-Bud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157" y="9"/>
+        </scene>
+        <!--Edit Person View Controller - 新建编辑-->
+        <scene sceneID="67C-eD-NO8">
+            <objects>
+                <viewController id="agh-8j-PDm" customClass="EditPersonViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wSv-5p-lyh">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="用户名：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgg-PY-fbG">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oFc-dQ-LlK">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="203" id="ARd-kj-uge"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bgg-PY-fbG" firstAttribute="leading" secondItem="wSv-5p-lyh" secondAttribute="leading" constant="26" id="GnS-6r-bdx"/>
+                            <constraint firstItem="oFc-dQ-LlK" firstAttribute="top" secondItem="wSv-5p-lyh" secondAttribute="top" constant="16" id="Tzb-Q1-65y"/>
+                            <constraint firstItem="Bgg-PY-fbG" firstAttribute="top" secondItem="wSv-5p-lyh" secondAttribute="top" constant="20" symbolic="YES" type="default" id="cAP-0b-nMo"/>
+                            <constraint firstAttribute="trailing" secondItem="oFc-dQ-LlK" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="fIU-T5-viv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="新建编辑" id="sDg-6k-tgU">
+                        <barButtonItem key="rightBarButtonItem" title="保存" id="t6z-Jk-B80">
+                            <connections>
+                                <action selector="backToList:" destination="agh-8j-PDm" id="ZBS-5c-z9z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pDv-QD-jfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="642" y="9"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xvH-B4-HJC">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="h5e-kn-0Iz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4KZ-F8-wOZ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7sz-Ch-VN6" kind="relationship" relationship="rootViewController" id="WEB-9C-Czx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K2r-9t-wl7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-441" y="-1"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="EditPersonViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditPersonViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backToList:"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

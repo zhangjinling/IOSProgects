@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180B9F9C17EC2EF400FB058C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180B9F9B17EC2EF400FB058C /* UIKit.framework */; };
+		180B9F9E17EC2EF400FB058C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180B9F9D17EC2EF400FB058C /* Foundation.framework */; };
+		180B9FA017EC2EF400FB058C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180B9F9F17EC2EF400FB058C /* CoreGraphics.framework */; };
+		180B9FA617EC2EF400FB058C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 180B9FA417EC2EF400FB058C /* InfoPlist.strings */; };
+		180B9FA817EC2EF400FB058C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 180B9FA717EC2EF400FB058C /* main.m */; };
+		180B9FAC17EC2EF400FB058C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 180B9FAB17EC2EF400FB058C /* AppDelegate.m */; };
+		180B9FAE17EC2EF400FB058C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 180B9FAD17EC2EF400FB058C /* Default.png */; };
+		180B9FB017EC2EF400FB058C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 180B9FAF17EC2EF400FB058C /* Default@2x.png */; };
+		180B9FB217EC2EF400FB058C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 180B9FB117EC2EF400FB058C /* Default-568h@2x.png */; };
+		180B9FB917EC2F0300FB058C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180B9FB817EC2F0300FB058C /* MainWindow.xib */; };
+		180B9FBC17EC2F9300FB058C /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180B9FBB17EC2F9300FB058C /* NavViewController.m */; };
+		180B9FBE17EC2FA200FB058C /* NavViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180B9FBD17EC2FA200FB058C /* NavViewController.xib */; };
+		180B9FC217EC2FB900FB058C /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180B9FC017EC2FB900FB058C /* OtherViewController.m */; };
+		180B9FC317EC2FB900FB058C /* OtherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180B9FC117EC2FB900FB058C /* OtherViewController.xib */; };
+		180B9FC717EC302500FB058C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180B9FC517EC302500FB058C /* RootViewController.m */; };
+		180B9FC817EC302500FB058C /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180B9FC617EC302500FB058C /* RootViewController.xib */; };
+		180B9FCC17EC307F00FB058C /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180B9FCA17EC307F00FB058C /* NextViewController.m */; };
+		180B9FCD17EC307F00FB058C /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180B9FCB17EC307F00FB058C /* NextViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		180B9F9817EC2EF400FB058C /* 02.组合应用.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02.组合应用.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		180B9F9B17EC2EF400FB058C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		180B9F9D17EC2EF400FB058C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		180B9F9F17EC2EF400FB058C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		180B9FA317EC2EF400FB058C /* 02.组合应用-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "02.组合应用-Info.plist"; sourceTree = "<group>"; };
+		180B9FA517EC2EF400FB058C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		180B9FA717EC2EF400FB058C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		180B9FA917EC2EF400FB058C /* 02.组合应用-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "02.组合应用-Prefix.pch"; sourceTree = "<group>"; };
+		180B9FAA17EC2EF400FB058C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		180B9FAB17EC2EF400FB058C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		180B9FAD17EC2EF400FB058C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		180B9FAF17EC2EF400FB058C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		180B9FB117EC2EF400FB058C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		180B9FB817EC2F0300FB058C /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		180B9FBA17EC2F9300FB058C /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
+		180B9FBB17EC2F9300FB058C /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
+		180B9FBD17EC2FA200FB058C /* NavViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavViewController.xib; sourceTree = "<group>"; };
+		180B9FBF17EC2FB900FB058C /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
+		180B9FC017EC2FB900FB058C /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
+		180B9FC117EC2FB900FB058C /* OtherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherViewController.xib; sourceTree = "<group>"; };
+		180B9FC417EC302500FB058C /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		180B9FC517EC302500FB058C /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		180B9FC617EC302500FB058C /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		180B9FC917EC307F00FB058C /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		180B9FCA17EC307F00FB058C /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		180B9FCB17EC307F00FB058C /* NextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		180B9F9517EC2EF400FB058C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180B9F9C17EC2EF400FB058C /* UIKit.framework in Frameworks */,
+				180B9F9E17EC2EF400FB058C /* Foundation.framework in Frameworks */,
+				180B9FA017EC2EF400FB058C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180B9F8F17EC2EF400FB058C = {
+			isa = PBXGroup;
+			children = (
+				180B9FA117EC2EF400FB058C /* 02.组合应用 */,
+				180B9F9A17EC2EF400FB058C /* Frameworks */,
+				180B9F9917EC2EF400FB058C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		180B9F9917EC2EF400FB058C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				180B9F9817EC2EF400FB058C /* 02.组合应用.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		180B9F9A17EC2EF400FB058C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				180B9F9B17EC2EF400FB058C /* UIKit.framework */,
+				180B9F9D17EC2EF400FB058C /* Foundation.framework */,
+				180B9F9F17EC2EF400FB058C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		180B9FA117EC2EF400FB058C /* 02.组合应用 */ = {
+			isa = PBXGroup;
+			children = (
+				180B9FAA17EC2EF400FB058C /* AppDelegate.h */,
+				180B9FAB17EC2EF400FB058C /* AppDelegate.m */,
+				180B9FB817EC2F0300FB058C /* MainWindow.xib */,
+				180B9FBA17EC2F9300FB058C /* NavViewController.h */,
+				180B9FBB17EC2F9300FB058C /* NavViewController.m */,
+				180B9FBD17EC2FA200FB058C /* NavViewController.xib */,
+				180B9FBF17EC2FB900FB058C /* OtherViewController.h */,
+				180B9FC017EC2FB900FB058C /* OtherViewController.m */,
+				180B9FC117EC2FB900FB058C /* OtherViewController.xib */,
+				180B9FC417EC302500FB058C /* RootViewController.h */,
+				180B9FC517EC302500FB058C /* RootViewController.m */,
+				180B9FC617EC302500FB058C /* RootViewController.xib */,
+				180B9FC917EC307F00FB058C /* NextViewController.h */,
+				180B9FCA17EC307F00FB058C /* NextViewController.m */,
+				180B9FCB17EC307F00FB058C /* NextViewController.xib */,
+				180B9FA217EC2EF400FB058C /* Supporting Files */,
+			);
+			path = "02.组合应用";
+			sourceTree = "<group>";
+		};
+		180B9FA217EC2EF400FB058C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				180B9FA317EC2EF400FB058C /* 02.组合应用-Info.plist */,
+				180B9FA417EC2EF400FB058C /* InfoPlist.strings */,
+				180B9FA717EC2EF400FB058C /* main.m */,
+				180B9FA917EC2EF400FB058C /* 02.组合应用-Prefix.pch */,
+				180B9FAD17EC2EF400FB058C /* Default.png */,
+				180B9FAF17EC2EF400FB058C /* Default@2x.png */,
+				180B9FB117EC2EF400FB058C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		180B9F9717EC2EF400FB058C /* 02.组合应用 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180B9FB517EC2EF400FB058C /* Build configuration list for PBXNativeTarget "02.组合应用" */;
+			buildPhases = (
+				180B9F9417EC2EF400FB058C /* Sources */,
+				180B9F9517EC2EF400FB058C /* Frameworks */,
+				180B9F9617EC2EF400FB058C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "02.组合应用";
+			productName = "02.组合应用";
+			productReference = 180B9F9817EC2EF400FB058C /* 02.组合应用.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		180B9F9017EC2EF400FB058C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = itcast;
+			};
+			buildConfigurationList = 180B9F9317EC2EF400FB058C /* Build configuration list for PBXProject "02.组合应用" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 180B9F8F17EC2EF400FB058C;
+			productRefGroup = 180B9F9917EC2EF400FB058C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				180B9F9717EC2EF400FB058C /* 02.组合应用 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		180B9F9617EC2EF400FB058C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180B9FA617EC2EF400FB058C /* InfoPlist.strings in Resources */,
+				180B9FAE17EC2EF400FB058C /* Default.png in Resources */,
+				180B9FB017EC2EF400FB058C /* Default@2x.png in Resources */,
+				180B9FB217EC2EF400FB058C /* Default-568h@2x.png in Resources */,
+				180B9FB917EC2F0300FB058C /* MainWindow.xib in Resources */,
+				180B9FBE17EC2FA200FB058C /* NavViewController.xib in Resources */,
+				180B9FC317EC2FB900FB058C /* OtherViewController.xib in Resources */,
+				180B9FC817EC302500FB058C /* RootViewController.xib in Resources */,
+				180B9FCD17EC307F00FB058C /* NextViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		180B9F9417EC2EF400FB058C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180B9FA817EC2EF400FB058C /* main.m in Sources */,
+				180B9FAC17EC2EF400FB058C /* AppDelegate.m in Sources */,
+				180B9FBC17EC2F9300FB058C /* NavViewController.m in Sources */,
+				180B9FC217EC2FB900FB058C /* OtherViewController.m in Sources */,
+				180B9FC717EC302500FB058C /* RootViewController.m in Sources */,
+				180B9FCC17EC307F00FB058C /* NextViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		180B9FA417EC2EF400FB058C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180B9FA517EC2EF400FB058C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		180B9FB317EC2EF400FB058C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		180B9FB417EC2EF400FB058C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		180B9FB617EC2EF400FB058C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "02.组合应用/02.组合应用-Prefix.pch";
+				INFOPLIST_FILE = "02.组合应用/02.组合应用-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		180B9FB717EC2EF400FB058C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "02.组合应用/02.组合应用-Prefix.pch";
+				INFOPLIST_FILE = "02.组合应用/02.组合应用-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		180B9F9317EC2EF400FB058C /* Build configuration list for PBXProject "02.组合应用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180B9FB317EC2EF400FB058C /* Debug */,
+				180B9FB417EC2EF400FB058C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180B9FB517EC2EF400FB058C /* Build configuration list for PBXNativeTarget "02.组合应用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180B9FB617EC2EF400FB058C /* Debug */,
+				180B9FB717EC2EF400FB058C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 180B9F9017EC2EF400FB058C /* Project object */;
+}
