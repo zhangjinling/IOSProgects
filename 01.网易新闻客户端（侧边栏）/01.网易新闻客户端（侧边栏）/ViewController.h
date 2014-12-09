@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "RightViewController.h"
+#import "LeftViewController.h"
+#import "MenuModel.h"
 
-@interface ViewController : UIViewController<UINavigationControllerDelegate,UIImagePickerControllerDelegate,RightViewControllerDelegate>
+@interface ViewController : UIViewController<UINavigationControllerDelegate,UIImagePickerControllerDelegate,RightViewControllerDelegate,LeftViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *leftView;
 @property (weak, nonatomic) IBOutlet UIView *rightView;

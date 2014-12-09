@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "LeftViewController.h"
+
+
 
 @interface ViewController ()
 @property (strong,nonatomic) RightViewController *rightController;
@@ -23,12 +24,17 @@
     self.rightController = [[RightViewController alloc]init];
     //指定代理
     [self.rightController setDelegate:self];
-    
+
     [self.rightView addSubview:self.rightController.view];
     //实例化左侧菜单式图
     self.leftController = [[LeftViewController alloc]init];
+    //设置代理
+    [self.leftController setMenuDelegate:self];
     [self.leftView addSubview:self.leftController.view];
     
+    //指定初始的内容视图
+    [self LeftViewController:nil className:@"NewsViewController"];
+
 }
 
 
@@ -83,5 +89,31 @@
         [picker setAllowsEditing:YES];
         [picker setDelegate:self];
         [self presentViewController:picker animated:YES completion:nil];
+}
+#pragma mark - 左侧菜单式图的代理方法
+- (void)LeftViewController:(LeftViewController *)controller className:(NSString *)className
+{
+    /*
+     选中表格行的处理的事情：
+     1>.关闭菜单栏视图
+     2>.加载选中项对应的视图控制器
+     */
+    //关闭视图
+    if (controller != nil) {
+        [self leftButton:nil];
+    }
+    
+    //加载相应的控制器
+    //把原有的视图从站位试图中清理掉
+    for (UIView *view in self.contentView.subviews) {
+        if (![view isKindOfClass:[UINavigationBar class]]) {
+            [view removeFromSuperview];
+        }
+    }
+    //从字符串加载类
+    Class c = NSClassFromString(className);
+    //注意此处实例化不能使用uiviewcontroller
+    UIViewController *vc = [[c alloc]init];
+    [self.contentView insertSubview:vc.view atIndex:0];
 }
 @end

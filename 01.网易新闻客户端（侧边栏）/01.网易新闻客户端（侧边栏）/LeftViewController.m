@@ -7,14 +7,18 @@
 //
 
 #import "LeftViewController.h"
-#import "MenuModel.h"
+
 @interface LeftViewController ()
 
 @property (strong,nonatomic)NSArray *dataList;
 @end
 
 @implementation LeftViewController
-
+/*
+    选中表格行的处理的事情：
+        1>.通知上级视图的控制器关闭菜单栏视图
+        2>.通知上级视图控制器加载选中项对应的视图控制器
+ */
 #pragma mark - 实例化视图
 - (void)loadView
 {
@@ -49,5 +53,10 @@
     [cell.detailTextLabel setText:@"明细"];
     return cell;
 }
-
+#pragma mark - 代理方法
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    MenuModel *menu = self.dataList[indexPath.row];
+    [self.menuDelegate LeftViewController:self className:menu.className];
+}
 @end

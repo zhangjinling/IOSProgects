@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		146397021A371E27009698A1 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146397001A371E27009698A1 /* NewsViewController.m */; };
+		146397031A371E27009698A1 /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 146397011A371E27009698A1 /* NewsViewController.xib */; };
+		146397071A371E3D009698A1 /* LocalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146397051A371E3D009698A1 /* LocalViewController.m */; };
+		146397081A371E3D009698A1 /* LocalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 146397061A371E3D009698A1 /* LocalViewController.xib */; };
+		1463970C1A371E4F009698A1 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1463970A1A371E4F009698A1 /* PhotoViewController.m */; };
+		1463970D1A371E4F009698A1 /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1463970B1A371E4F009698A1 /* PhotoViewController.xib */; };
+		146397111A371E69009698A1 /* ReadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1463970F1A371E69009698A1 /* ReadingViewController.m */; };
+		146397121A371E69009698A1 /* ReadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 146397101A371E69009698A1 /* ReadingViewController.xib */; };
 		14EA16891A35CF9400642445 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EA16881A35CF9400642445 /* Foundation.framework */; };
 		14EA168B1A35CF9400642445 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EA168A1A35CF9400642445 /* CoreGraphics.framework */; };
 		14EA168D1A35CF9400642445 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EA168C1A35CF9400642445 /* UIKit.framework */; };
@@ -50,6 +58,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		146396FF1A371E27009698A1 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		146397001A371E27009698A1 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		146397011A371E27009698A1 /* NewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		146397041A371E3D009698A1 /* LocalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalViewController.h; sourceTree = "<group>"; };
+		146397051A371E3D009698A1 /* LocalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalViewController.m; sourceTree = "<group>"; };
+		146397061A371E3D009698A1 /* LocalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalViewController.xib; sourceTree = "<group>"; };
+		146397091A371E4F009698A1 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		1463970A1A371E4F009698A1 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		1463970B1A371E4F009698A1 /* PhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoViewController.xib; sourceTree = "<group>"; };
+		1463970E1A371E69009698A1 /* ReadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadingViewController.h; sourceTree = "<group>"; };
+		1463970F1A371E69009698A1 /* ReadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadingViewController.m; sourceTree = "<group>"; };
+		146397101A371E69009698A1 /* ReadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadingViewController.xib; sourceTree = "<group>"; };
 		14EA16851A35CF9400642445 /* 01.网易新闻客户端（侧边栏）.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01.网易新闻客户端（侧边栏）.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14EA16881A35CF9400642445 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		14EA168A1A35CF9400642445 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -114,6 +134,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		146397131A371EC1009698A1 /* 新闻视图控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				146396FF1A371E27009698A1 /* NewsViewController.h */,
+				146397001A371E27009698A1 /* NewsViewController.m */,
+				146397011A371E27009698A1 /* NewsViewController.xib */,
+				146397041A371E3D009698A1 /* LocalViewController.h */,
+				146397051A371E3D009698A1 /* LocalViewController.m */,
+				146397061A371E3D009698A1 /* LocalViewController.xib */,
+				146397091A371E4F009698A1 /* PhotoViewController.h */,
+				1463970A1A371E4F009698A1 /* PhotoViewController.m */,
+				1463970B1A371E4F009698A1 /* PhotoViewController.xib */,
+				1463970E1A371E69009698A1 /* ReadingViewController.h */,
+				1463970F1A371E69009698A1 /* ReadingViewController.m */,
+				146397101A371E69009698A1 /* ReadingViewController.xib */,
+			);
+			name = "新闻视图控制器";
+			sourceTree = "<group>";
+		};
 		14EA167C1A35CF9400642445 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +198,7 @@
 				14EA16C31A35EC7F00642445 /* LeftViewController.m */,
 				14EA16DD1A35EFFE00642445 /* MenuModel.h */,
 				14EA16DE1A35EFFE00642445 /* MenuModel.m */,
+				146397131A371EC1009698A1 /* 新闻视图控制器 */,
 				14EA16A01A35CF9400642445 /* Images.xcassets */,
 				14EA168F1A35CF9400642445 /* Supporting Files */,
 			);
@@ -283,14 +323,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				14EA16D71A35EF2600642445 /* sidebar_nav_local@2x.png in Resources */,
+				146397031A371E27009698A1 /* NewsViewController.xib in Resources */,
 				14EA16D51A35EF2600642445 /* sidebar_nav_comment@2x.png in Resources */,
 				14EA16D41A35EF2600642445 /* night_user_defaulthead@2x.png in Resources */,
 				14EA16A11A35CF9400642445 /* Images.xcassets in Resources */,
 				14EA16C11A35E58100642445 /* RightViewController.xib in Resources */,
+				146397081A371E3D009698A1 /* LocalViewController.xib in Resources */,
 				14EA16D11A35EF2600642445 /* 01.网易新闻侧栏界面搭建_20141282071.JPG in Resources */,
 				14EA16D81A35EF2600642445 /* sidebar_nav_news@2x.png in Resources */,
 				14EA16931A35CF9400642445 /* InfoPlist.strings in Resources */,
 				14EA16DB1A35EF2600642445 /* sidebar_nav_topic@2x.png in Resources */,
+				146397121A371E69009698A1 /* ReadingViewController.xib in Resources */,
 				14EA16D91A35EF2600642445 /* sidebar_nav_photo@2x.png in Resources */,
 				14EA169C1A35CF9400642445 /* Main.storyboard in Resources */,
 				14EA16DA1A35EF2600642445 /* sidebar_nav_reading@2x.png in Resources */,
@@ -298,6 +341,7 @@
 				14EA16D61A35EF2600642445 /* sidebar_nav_focus@2x.png in Resources */,
 				14EA16D21A35EF2600642445 /* 01.网易新闻侧栏界面搭建_201412820549.JPG in Resources */,
 				14EA16DC1A35EF2600642445 /* sidebar_nav_vote@2x.png in Resources */,
+				1463970D1A371E4F009698A1 /* PhotoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,10 +362,14 @@
 			files = (
 				14EA169F1A35CF9400642445 /* ViewController.m in Sources */,
 				14EA16C41A35EC7F00642445 /* LeftViewController.m in Sources */,
+				146397071A371E3D009698A1 /* LocalViewController.m in Sources */,
+				146397111A371E69009698A1 /* ReadingViewController.m in Sources */,
 				14EA16C01A35E58100642445 /* RightViewController.m in Sources */,
 				14EA16991A35CF9400642445 /* AppDelegate.m in Sources */,
 				14EA16DF1A35EFFE00642445 /* MenuModel.m in Sources */,
+				1463970C1A371E4F009698A1 /* PhotoViewController.m in Sources */,
 				14EA16951A35CF9400642445 /* main.m in Sources */,
+				146397021A371E27009698A1 /* NewsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +574,7 @@
 				14EA16B91A35CF9400642445 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14EA16BA1A35CF9400642445 /* Build configuration list for PBXNativeTarget "01.网易新闻客户端（侧边栏）Tests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +583,7 @@
 				14EA16BC1A35CF9400642445 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
