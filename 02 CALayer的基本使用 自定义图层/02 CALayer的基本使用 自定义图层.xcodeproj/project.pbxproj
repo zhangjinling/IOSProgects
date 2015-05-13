@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		145042AA1B022F3D006245F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 145042A91B022F3D006245F1 /* main.m */; };
+		145042AD1B022F3D006245F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 145042AC1B022F3D006245F1 /* AppDelegate.m */; };
+		145042B51B022F3D006245F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145042B41B022F3D006245F1 /* Images.xcassets */; };
+		145042C41B022F3E006245F1 /* _2_CALayer___________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 145042C31B022F3E006245F1 /* _2_CALayer___________Tests.m */; };
+		145042CF1B022F83006245F1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 145042CE1B022F83006245F1 /* MainViewController.m */; };
+		145042D11B0231AD006245F1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145042D01B0231AD006245F1 /* QuartzCore.framework */; };
+		145042D31B02335E006245F1 /* 1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 145042D21B02335E006245F1 /* 1.JPG */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		145042BE1B022F3E006245F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1450429C1B022F3D006245F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 145042A31B022F3D006245F1;
+			remoteInfo = "02 CALayer的基本使用 自定义图层";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		145042A41B022F3D006245F1 /* 02 CALayer的基本使用 自定义图层.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02 CALayer的基本使用 自定义图层.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		145042A81B022F3D006245F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		145042A91B022F3D006245F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		145042AB1B022F3D006245F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		145042AC1B022F3D006245F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		145042B41B022F3D006245F1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		145042BD1B022F3E006245F1 /* 02 CALayer的基本使用 自定义图层Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "02 CALayer的基本使用 自定义图层Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		145042C21B022F3E006245F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		145042C31B022F3E006245F1 /* _2_CALayer___________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_2_CALayer___________Tests.m"; sourceTree = "<group>"; };
+		145042CD1B022F83006245F1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		145042CE1B022F83006245F1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		145042D01B0231AD006245F1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		145042D21B02335E006245F1 /* 1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.JPG; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		145042A11B022F3D006245F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				145042D11B0231AD006245F1 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		145042BA1B022F3E006245F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1450429B1B022F3D006245F1 = {
+			isa = PBXGroup;
+			children = (
+				145042A61B022F3D006245F1 /* 02 CALayer的基本使用 自定义图层 */,
+				145042C01B022F3E006245F1 /* 02 CALayer的基本使用 自定义图层Tests */,
+				145042A51B022F3D006245F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		145042A51B022F3D006245F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				145042A41B022F3D006245F1 /* 02 CALayer的基本使用 自定义图层.app */,
+				145042BD1B022F3E006245F1 /* 02 CALayer的基本使用 自定义图层Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		145042A61B022F3D006245F1 /* 02 CALayer的基本使用 自定义图层 */ = {
+			isa = PBXGroup;
+			children = (
+				145042AB1B022F3D006245F1 /* AppDelegate.h */,
+				145042AC1B022F3D006245F1 /* AppDelegate.m */,
+				145042CD1B022F83006245F1 /* MainViewController.h */,
+				145042CE1B022F83006245F1 /* MainViewController.m */,
+				145042B41B022F3D006245F1 /* Images.xcassets */,
+				145042A71B022F3D006245F1 /* Supporting Files */,
+			);
+			path = "02 CALayer的基本使用 自定义图层";
+			sourceTree = "<group>";
+		};
+		145042A71B022F3D006245F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				145042D21B02335E006245F1 /* 1.JPG */,
+				145042D01B0231AD006245F1 /* QuartzCore.framework */,
+				145042A81B022F3D006245F1 /* Info.plist */,
+				145042A91B022F3D006245F1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		145042C01B022F3E006245F1 /* 02 CALayer的基本使用 自定义图层Tests */ = {
+			isa = PBXGroup;
+			children = (
+				145042C31B022F3E006245F1 /* _2_CALayer___________Tests.m */,
+				145042C11B022F3E006245F1 /* Supporting Files */,
+			);
+			path = "02 CALayer的基本使用 自定义图层Tests";
+			sourceTree = "<group>";
+		};
+		145042C11B022F3E006245F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				145042C21B022F3E006245F1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		145042A31B022F3D006245F1 /* 02 CALayer的基本使用 自定义图层 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 145042C71B022F3E006245F1 /* Build configuration list for PBXNativeTarget "02 CALayer的基本使用 自定义图层" */;
+			buildPhases = (
+				145042A01B022F3D006245F1 /* Sources */,
+				145042A11B022F3D006245F1 /* Frameworks */,
+				145042A21B022F3D006245F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "02 CALayer的基本使用 自定义图层";
+			productName = "02 CALayer的基本使用 自定义图层";
+			productReference = 145042A41B022F3D006245F1 /* 02 CALayer的基本使用 自定义图层.app */;
+			productType = "com.apple.product-type.application";
+		};
+		145042BC1B022F3E006245F1 /* 02 CALayer的基本使用 自定义图层Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 145042CA1B022F3E006245F1 /* Build configuration list for PBXNativeTarget "02 CALayer的基本使用 自定义图层Tests" */;
+			buildPhases = (
+				145042B91B022F3E006245F1 /* Sources */,
+				145042BA1B022F3E006245F1 /* Frameworks */,
+				145042BB1B022F3E006245F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				145042BF1B022F3E006245F1 /* PBXTargetDependency */,
+			);
+			name = "02 CALayer的基本使用 自定义图层Tests";
+			productName = "02 CALayer的基本使用 自定义图层Tests";
+			productReference = 145042BD1B022F3E006245F1 /* 02 CALayer的基本使用 自定义图层Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1450429C1B022F3D006245F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = seven;
+				TargetAttributes = {
+					145042A31B022F3D006245F1 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					145042BC1B022F3E006245F1 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 145042A31B022F3D006245F1;
+					};
+				};
+			};
+			buildConfigurationList = 1450429F1B022F3D006245F1 /* Build configuration list for PBXProject "02 CALayer的基本使用 自定义图层" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1450429B1B022F3D006245F1;
+			productRefGroup = 145042A51B022F3D006245F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				145042A31B022F3D006245F1 /* 02 CALayer的基本使用 自定义图层 */,
+				145042BC1B022F3E006245F1 /* 02 CALayer的基本使用 自定义图层Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		145042A21B022F3D006245F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				145042B51B022F3D006245F1 /* Images.xcassets in Resources */,
+				145042D31B02335E006245F1 /* 1.JPG in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		145042BB1B022F3E006245F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		145042A01B022F3D006245F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				145042AD1B022F3D006245F1 /* AppDelegate.m in Sources */,
+				145042CF1B022F83006245F1 /* MainViewController.m in Sources */,
+				145042AA1B022F3D006245F1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		145042B91B022F3E006245F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				145042C41B022F3E006245F1 /* _2_CALayer___________Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		145042BF1B022F3E006245F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 145042A31B022F3D006245F1 /* 02 CALayer的基本使用 自定义图层 */;
+			targetProxy = 145042BE1B022F3E006245F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		145042C51B022F3E006245F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		145042C61B022F3E006245F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		145042C81B022F3E006245F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "02 CALayer的基本使用 自定义图层/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		145042C91B022F3E006245F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "02 CALayer的基本使用 自定义图层/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		145042CB1B022F3E006245F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "02 CALayer的基本使用 自定义图层Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/02 CALayer的基本使用 自定义图层.app/02 CALayer的基本使用 自定义图层";
+			};
+			name = Debug;
+		};
+		145042CC1B022F3E006245F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "02 CALayer的基本使用 自定义图层Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/02 CALayer的基本使用 自定义图层.app/02 CALayer的基本使用 自定义图层";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1450429F1B022F3D006245F1 /* Build configuration list for PBXProject "02 CALayer的基本使用 自定义图层" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				145042C51B022F3E006245F1 /* Debug */,
+				145042C61B022F3E006245F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		145042C71B022F3E006245F1 /* Build configuration list for PBXNativeTarget "02 CALayer的基本使用 自定义图层" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				145042C81B022F3E006245F1 /* Debug */,
+				145042C91B022F3E006245F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		145042CA1B022F3E006245F1 /* Build configuration list for PBXNativeTarget "02 CALayer的基本使用 自定义图层Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				145042CB1B022F3E006245F1 /* Debug */,
+				145042CC1B022F3E006245F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1450429C1B022F3D006245F1 /* Project object */;
+}
