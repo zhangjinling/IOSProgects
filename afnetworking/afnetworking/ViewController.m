@@ -22,9 +22,18 @@
 }
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [self playUpload];
+//    [self playUpload];
+    [self netStatus];
 }
-
+#pragma mark - 监控网络状态
+- (void)netStatus
+{
+    AFNetworkReachabilityManager *mgr = [AFNetworkReachabilityManager sharedManager];
+    [mgr setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        NSLog(@"%ld",(long)status);
+    }];
+    [mgr startMonitoring];
+}
 #pragma mark - 拍照上传
 - (void)playUpload
 {
