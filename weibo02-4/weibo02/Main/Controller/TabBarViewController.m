@@ -69,8 +69,7 @@
     //先给外面的自控制器 包装一个navcontroller
     HWNavigationController *nav = [[HWNavigationController alloc]initWithRootViewController:childVc];
     
-    [self addChildViewController:nav
-     ];
+    [self addChildViewController:nav];
 }
 
 

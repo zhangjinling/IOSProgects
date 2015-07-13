@@ -25,7 +25,7 @@
     TabBarViewController *tabbarVc = [[TabBarViewController alloc]init];
     self.window.rootViewController = tabbarVc;
     
-        //4.显示窗口
+    //4.显示窗口
     [self.window makeKeyAndVisible];
     return YES;
 }
