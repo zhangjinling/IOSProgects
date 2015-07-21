@@ -26,11 +26,11 @@
     //截取来源
     //1.正则表达式
     //2.截取
-    NSRange range;
-    range.location = [source rangeOfString:@">"].location + 1;
-    range.length = [source rangeOfString:@"<" options:NSBackwardsSearch].location - range.location;
-    
-    _source = [NSString stringWithFormat:@"来自:%@",[source substringWithRange:range]];
+//    NSRange range;
+//    range.location = [source rangeOfString:@">"].location + 1;
+//    range.length = [source rangeOfString:@"</" options:NSBackwardsSearch].location - range.location;
+//    
+//    _source = [NSString stringWithFormat:@"来自:%@",[source substringWithRange:range]];
 }
 
 

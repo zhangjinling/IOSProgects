@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6C1F1CBE-BCEC-4D0B-9EBB-AF8D60B49AF8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>weibo02</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>30EF90105DBD3601C4590188A0D7618C16A18DA0</key>
+		<string>github.com:zhangjinling/IOSProgects.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>weibo02-14(显示来源和时间)/weibo02.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>30EF90105DBD3601C4590188A0D7618C16A18DA0</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:zhangjinling/IOSProgects.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>30EF90105DBD3601C4590188A0D7618C16A18DA0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>30EF90105DBD3601C4590188A0D7618C16A18DA0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IOSProgects</string>
+		</dict>
+	</array>
+</dict>
+</plist>

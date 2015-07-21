@@ -9,8 +9,7 @@
 #import "MessageCenterViewController.h"
 
 @interface MessageCenterViewController ()
-
-@end
+∂∂d
 
 @implementation MessageCenterViewController
 
