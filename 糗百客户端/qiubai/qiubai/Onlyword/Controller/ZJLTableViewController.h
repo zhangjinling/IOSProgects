@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ZJLTableViewController.h
 //  qiubai
 //
 //  Created by Seven on 15/7/30.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ZJLTableViewController : UITableViewController
 
 @end
-

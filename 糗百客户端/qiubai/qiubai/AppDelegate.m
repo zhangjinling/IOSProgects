@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "HWNavigationController.h"
+#import "ZJLTableViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    ZJLTableViewController *home = [[ZJLTableViewController alloc]init];
+//    [self addChildVc:home title:@"首页" image:@"tabbar_home" selectImage:@"tabbar_home_selected"];
+    home.navigationItem.title = @"糗事百科";
+
+    
+    HWNavigationController *nav = [[HWNavigationController alloc]initWithRootViewController:home];
+    [self.window setRootViewController:nav];
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 

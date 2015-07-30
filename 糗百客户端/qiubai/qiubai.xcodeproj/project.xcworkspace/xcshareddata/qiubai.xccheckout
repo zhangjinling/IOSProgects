@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C9769C3B-FBB7-4F17-826E-3AD16B0ECAD0</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>qiubai</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>30EF90105DBD3601C4590188A0D7618C16A18DA0</key>
 		<string>github.com:zhangjinling/IOSProgects.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>糗百客户端/qiubai/qiubai.xcodeproj/project.xcworkspace</string>
+	<string>糗百客户端/qiubai/qiubai.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>30EF90105DBD3601C4590188A0D7618C16A18DA0</key>
