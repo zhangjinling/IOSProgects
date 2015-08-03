@@ -1,0 +1,22 @@
+//
+//  Prefix.pch
+//  wangyiNews
+//
+//  Created by Seven on 15/8/3.
+//  Copyright (c) 2015年 seven. All rights reserved.
+//
+
+#ifndef wangyiNews_Prefix_pch
+#define wangyiNews_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "UIView+Extension.h"
+#import "UIImage+UIImage_Extension.h"
+#import "UIBarButtonItem+Extension.h"
+
+#define HWColor(r,g,b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b)/ 255.0 alpha:1.0f]
+#define HWColora(r,g,b,a) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b)/ 255.0 alpha:(a)/255.0]
+
+#define HWRandomColor HWColor(arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256))
+#endif
