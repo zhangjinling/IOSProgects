@@ -21,7 +21,7 @@
 //来源字体
 #define HWStatusCellSourceFont [UIFont systemFontOfSize:12.0f]
 //正文字体
-#define HWStatusCellContentFont [UIFont systemFontOfSize:14.0f]
+#define HWStatusCellContentFont [UIFont systemFontOfSize:13.0f]
 //转发微博正文字体
 #define HWStatusCellRetweetContentFont [UIFont systemFontOfSize:13.0f]
 //cell 的边框宽度

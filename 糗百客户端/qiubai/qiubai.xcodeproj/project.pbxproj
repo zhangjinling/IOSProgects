@@ -85,6 +85,7 @@
 		14F9A5561B6BB61D00E16AD5 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F9A5431B6BB61D00E16AD5 /* UIView+MJExtension.m */; };
 		14F9A55D1B6C6D2700E16AD5 /* ZJLQiubaiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F9A55C1B6C6D2700E16AD5 /* ZJLQiubaiCell.m */; };
 		14F9A5601B6C92E400E16AD5 /* ZJLQiubaiFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F9A55F1B6C92E400E16AD5 /* ZJLQiubaiFrame.m */; };
+		14F9A5661B6DBE0D00E16AD5 /* ZJLDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F9A5651B6DBE0D00E16AD5 /* ZJLDetailController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -257,6 +258,8 @@
 		14F9A55C1B6C6D2700E16AD5 /* ZJLQiubaiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZJLQiubaiCell.m; path = ../../../../../../../Documents/ZJLQiubaiCell.m; sourceTree = "<group>"; };
 		14F9A55E1B6C92E400E16AD5 /* ZJLQiubaiFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLQiubaiFrame.h; sourceTree = "<group>"; };
 		14F9A55F1B6C92E400E16AD5 /* ZJLQiubaiFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLQiubaiFrame.m; sourceTree = "<group>"; };
+		14F9A5641B6DBE0D00E16AD5 /* ZJLDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLDetailController.h; sourceTree = "<group>"; };
+		14F9A5651B6DBE0D00E16AD5 /* ZJLDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLDetailController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -403,6 +406,8 @@
 			children = (
 				145C695F1B6A60630090E006 /* ZJLTableViewController.h */,
 				145C69601B6A60630090E006 /* ZJLTableViewController.m */,
+				14F9A5641B6DBE0D00E16AD5 /* ZJLDetailController.h */,
+				14F9A5651B6DBE0D00E16AD5 /* ZJLDetailController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -794,6 +799,7 @@
 				14C76A991B6A6C79007A85C1 /* AFNetworkReachabilityManager.m in Sources */,
 				145C69111B6A56440090E006 /* AppDelegate.m in Sources */,
 				14C76AA11B6A6C79007A85C1 /* MBProgressHUD.m in Sources */,
+				14F9A5661B6DBE0D00E16AD5 /* ZJLDetailController.m in Sources */,
 				145C69351B6A5AF50090E006 /* HWNavigationController.m in Sources */,
 				145C690E1B6A56440090E006 /* main.m in Sources */,
 				14F9A5511B6BB61D00E16AD5 /* MJRefreshStateHeader.m in Sources */,
@@ -923,7 +929,6 @@
 		145C692C1B6A56440090E006 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = qiubai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -934,7 +939,6 @@
 		145C692D1B6A56440090E006 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = qiubai/Info.plist;

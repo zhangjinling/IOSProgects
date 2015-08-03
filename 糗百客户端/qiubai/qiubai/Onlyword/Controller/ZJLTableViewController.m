@@ -13,6 +13,7 @@
 #import "ZJLUser.h"
 #import "MJRefresh.h"
 #import "ZJLQiubaiCell.h"
+#import "ZJLDetailController.h"
 
 @interface ZJLTableViewController ()
 
@@ -32,60 +33,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        // 进入刷新状态后会自动调用这个block
+        [self loadNewData];
     }];
     // 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadNewData方法）
-//    self.tableView.header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
-//    
+    self.tableView.header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
+//
 //    // 马上进入刷新状态
-//    [self.tableView.header beginRefreshing];
+    [self.tableView.header beginRefreshing];
 
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(login) image:@"navigationbar_friendsearch" highImage:@"navigationbar_friendsearch_highlighted"];
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(send) image:@"navigationbar_pop" highImage:@"navigationbar_pop_highlighted"];
 
-    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
-    mgr.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
-    //2.拼接请求参数
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"count"] = @"30";
-    params[@"readarticles"] = @"%5B112017805%2C112016424%5D";
-    params[@"page"] = @"1";
-    params[@"AdID"] = @"14382569338301C984F54B";
-    
-    [mgr GET:@"http://m2.qiushibaike.com/article/list/text" parameters:params success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
-//                [self.qbArray addObjectsFromArray:[ZJLQiubai objectArrayWithKeyValuesArray:responseObject[@"items"]]];
-        
-        NSArray *newQiubai = [ZJLQiubai objectArrayWithKeyValuesArray:responseObject[@"items"]];
-        //将HWStatus数组转换为HWStatusFrames数组
-        NSArray *newFrames = [self statusFramesWithStatues:newQiubai];
-        [self.qbArray addObjectsFromArray:newFrames];
-        
-        HWLog(@"%@",responseObject);
-        [self.tableView reloadData];
-        
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        HWLog(@"%@",error);
+    self.tableView.footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        [self loadMoreData];
     }];
-    HWLog(@"=====%lu",(unsigned long)self.qbArray.count);
-
-    
-    
-    
-    
-    
-//    self.tableView.footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
-//        [self loadMoreData];
-//    }];
+}
+- (void)loadMoreData
+{
+    HWLog(@"loadMoreData");
+    self.currentPage = self.currentPage + 1;
+    [self loadQiubaiDataWithPage:self.currentPage];
+    [self.tableView.footer endRefreshing];
 
 }
-//- (void)loadMoreData
-//{
-//    HWLog(@"loadMoreData");
-//    self.currentPage = self.currentPage + 1;
-//    [self.qbArray addObjectsFromArray: [self loadQiubaiDataWithPage:self.currentPage]];
-//    [self.tableView.footer endRefreshing];
-//    HWLog(@"%d--%d",self.currentPage,self.qbArray.count);
-//}
 - (void)loadNewData
 {
     HWLog(@"loadNewdata");
@@ -102,25 +72,26 @@
     //2.拼接请求参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"count"] = @"30";
-    params[@"readarticles"] = @"%5B112017805%2C112016424%5D";
+    params[@"readarticles"] = @"%2%2C112016424%5D";
     params[@"page"] = @(page);
-    params[@"AdID"] = @"14382569338301C984F54B";
+    params[@"AdID"] = @"d";
     
     [mgr GET:@"http://m2.qiushibaike.com/article/list/text" parameters:params success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
-//        [self.qbArray addObjectsFromArray:[ZJLQiubai objectArrayWithKeyValuesArray:responseObject[@"items"]]];
         
         NSArray *newQiubai = [ZJLQiubai objectArrayWithKeyValuesArray:responseObject[@"items"]];
-        //将HWStatus数组转换为HWStatusFrames数组
-        NSArray *newFrames = [self statusFramesWithStatues:newQiubai];
-        [self.qbArray addObjectsFromArray:newFrames];
 
-        HWLog(@"%@",responseObject);
+        NSArray *newFrames = [self statusFramesWithStatues:newQiubai];
+        if (page == 1) {
+            [self.qbArray removeAllObjects];
+            [self.qbArray addObjectsFromArray:newFrames];
+        }else{
+            [self.qbArray addObjectsFromArray:newFrames];
+        }
         [self.tableView reloadData];
 
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         HWLog(@"%@",error);
     }];
-    HWLog(@"=====%lu",(unsigned long)self.qbArray.count);
     return self.qbArray;
 }
 - (NSArray *)statusFramesWithStatues:(NSArray *)statues
@@ -160,6 +131,11 @@
     return frame.cellHeight;
 
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ZJLDetailController *detail = [[ZJLDetailController alloc]init];
+    [self.navigationController pushViewController:detail animated:YES];
+}
 #pragma mark - 监听方法
 - (void)send
 {
@@ -169,5 +145,32 @@
 - (void)login
 {
     HWLog(@"login");
+}
+
+- (void)test
+{
+    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
+    mgr.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    //2.拼接请求参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"count"] = @"30";
+    params[@"readarticles"] = @"%5B112017805%2C112016424%5D";
+    params[@"page"] = @"1";
+    params[@"AdID"] = @"14382569338301C984lF54B";
+    
+    [mgr GET:@"http://m2.qiushibaike.com/article/list/text" parameters:params success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
+        NSArray *newQiubai = [ZJLQiubai objectArrayWithKeyValuesArray:responseObject[@"items"]];
+        //将HWStatus数组转换为HWStatusFrames数组
+        NSArray *newFrames = [self statusFramesWithStatues:newQiubai];
+        [self.qbArray addObjectsFromArray:newFrames];
+        
+        HWLog(@"%@",responseObject);
+        [self.tableView reloadData];
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        HWLog(@"%@",error);
+    }];
+
+
 }
 @end
