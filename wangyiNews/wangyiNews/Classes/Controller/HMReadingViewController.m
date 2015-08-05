@@ -1,31 +1,28 @@
-
 //
-//  HMNewsViewController.m
+//  HMReadingViewController.m
 //  wangyiNews
 //
-//  Created by Seven on 15/8/3.
+//  Created by Seven on 15/8/4.
 //  Copyright (c) 2015年 seven. All rights reserved.
 //
 
-#import "HMNewsViewController.h"
-#import "HMTitleView.h"
-@interface HMNewsViewController ()
+#import "HMReadingViewController.h"
+
+@interface HMReadingViewController ()
 
 @end
 
-@implementation HMNewsViewController
+@implementation HMReadingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    //1.标题
-//    HMTitleView *titleView = [[HMTitleView alloc]init];
-//    titleView.title = @"新闻";
-//    self.navigationItem.titleView =titleView;
-//    //2.左右按钮
-//    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(leftMenu) image:@"top_navigation_menuicon"];
-//    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(rightMenu) image:@"top_navigation_infoicon"];
+    
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

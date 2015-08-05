@@ -7,9 +7,9 @@
 //
 
 #import "HWLeftMenu.h"
-
+#import "HMLeftMenuButton.h"
 @interface HWLeftMenu ()
-@property (nonatomic, weak)UIButton *selectedButton;
+@property (nonatomic, weak)HMLeftMenuButton *selectedButton;
 @end
 
 
@@ -22,7 +22,7 @@
         //leftMenu背景透明
         self.backgroundColor = [UIColor clearColor];
         CGFloat alpha = 51;
-        UIButton *btn = [self setupButtonWithIcon:@"sidebar_nav_news" title:@"新闻"  bgcolor:HWColora(202, 68, 73, alpha)];
+        HMLeftMenuButton *btn = [self setupButtonWithIcon:@"sidebar_nav_news" title:@"新闻"  bgcolor:HWColora(202, 68, 73, alpha)];
         [self buttonClick:btn];
         
         [self setupButtonWithIcon:@"sidebar_nav_reading" title:@"订阅" bgcolor:HWColora(190, 111, 69, alpha)];
@@ -34,11 +34,11 @@
     }
     return self;
 }
-- (UIButton *)setupButtonWithIcon:(NSString *)icon title:(NSString *)title bgcolor:(UIColor *)bgcolor
+- (HMLeftMenuButton *)setupButtonWithIcon:(NSString *)icon title:(NSString *)title bgcolor:(UIColor *)bgcolor
 {
-    UIButton *btn = [[UIButton alloc]init];
+    HMLeftMenuButton *btn = [[HMLeftMenuButton alloc]init];
     //监听按钮点击事件
-    [btn addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+    [btn addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchDown];
     
     [btn setImage:[UIImage imageNamed:icon] forState:UIControlStateNormal];
     [btn setTitle:title forState:UIControlStateNormal];
@@ -69,23 +69,35 @@
     CGFloat btnW = self.width;
     CGFloat btnH = self.height / btnCount;
     for (NSUInteger i = 0; i < btnCount; i++) {
-        UIButton *btn = self.subviews[i];
+        HMLeftMenuButton *btn = self.subviews[i];
+        btn.tag = i;
         btn.width = btnW;
         btn.height = btnH;
         btn.y = i * btnH;
     }
+}
+- (void)setDelegate:(id<HWLeftMenuDelegate>)delegate
+{
+    _delegate = delegate;
+    //默认选中的按钮
+    [self buttonClick:[self.subviews firstObject]];
 }
 /**
  *  监听按钮点击事件
  *
  *  @param button 点击的按钮
  */
-- (void)buttonClick:(UIButton *)button
+- (void)buttonClick:(HMLeftMenuButton *)button
 {
+    //通知代理
+    if([self.delegate respondsToSelector:@selector(leftMenu:didSelectButtonFromIndex:toIndex:)]){
+        [self.delegate leftMenu:self didSelectButtonFromIndex:self.selectedButton.tag toIndex:button.tag];
+    }
+
+    //控制按钮的状态
     self.selectedButton.selected = NO;
     button.selected = YES;
     self.selectedButton = button;
-
 }
 
 

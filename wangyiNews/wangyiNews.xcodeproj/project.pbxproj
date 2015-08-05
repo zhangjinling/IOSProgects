@@ -17,6 +17,11 @@
 		141BD2BE1B6FB94B00327120 /* HMNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141BD2BD1B6FB94B00327120 /* HMNewsViewController.m */; };
 		141BD2C11B6FBAE400327120 /* HMTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 141BD2C01B6FBAE400327120 /* HMTitleView.m */; };
 		141BD2C41B6FBDBD00327120 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 141BD2C31B6FBDBD00327120 /* UIBarButtonItem+Extension.m */; };
+		141BD2C71B70E4B700327120 /* HMReadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141BD2C61B70E4B700327120 /* HMReadingViewController.m */; };
+		141BD2CA1B70F8B400327120 /* HMLeftMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 141BD2C91B70F8B400327120 /* HMLeftMenuButton.m */; };
+		141BD2CD1B70FE7A00327120 /* HMNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 141BD2CC1B70FE7A00327120 /* HMNavigationBar.m */; };
+		141BD2D01B710B0F00327120 /* HMADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141BD2CF1B710B0F00327120 /* HMADViewController.m */; };
+		141BD2D21B710B4100327120 /* AD.png in Resources */ = {isa = PBXBuildFile; fileRef = 141BD2D11B710B4100327120 /* AD.png */; };
 		14F9A5B11B6F927D00E16AD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F9A5AF1B6F927D00E16AD5 /* Main.storyboard */; };
 		14F9A5B31B6F927D00E16AD5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F9A5B21B6F927D00E16AD5 /* Images.xcassets */; };
 		14F9A5B61B6F927D00E16AD5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F9A5B41B6F927D00E16AD5 /* LaunchScreen.xib */; };
@@ -55,6 +60,15 @@
 		141BD2C01B6FBAE400327120 /* HMTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMTitleView.m; sourceTree = "<group>"; };
 		141BD2C21B6FBDBD00327120 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		141BD2C31B6FBDBD00327120 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		141BD2C51B70E4B700327120 /* HMReadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMReadingViewController.h; sourceTree = "<group>"; };
+		141BD2C61B70E4B700327120 /* HMReadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMReadingViewController.m; sourceTree = "<group>"; };
+		141BD2C81B70F8B400327120 /* HMLeftMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMLeftMenuButton.h; sourceTree = "<group>"; };
+		141BD2C91B70F8B400327120 /* HMLeftMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMLeftMenuButton.m; sourceTree = "<group>"; };
+		141BD2CB1B70FE7A00327120 /* HMNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMNavigationBar.h; sourceTree = "<group>"; };
+		141BD2CC1B70FE7A00327120 /* HMNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMNavigationBar.m; sourceTree = "<group>"; };
+		141BD2CE1B710B0F00327120 /* HMADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMADViewController.h; sourceTree = "<group>"; };
+		141BD2CF1B710B0F00327120 /* HMADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMADViewController.m; sourceTree = "<group>"; };
+		141BD2D11B710B4100327120 /* AD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AD.png; sourceTree = "<group>"; };
 		14F9A5A21B6F927D00E16AD5 /* wangyiNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wangyiNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F9A5A61B6F927D00E16AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14F9A5B01B6F927D00E16AD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -117,6 +131,10 @@
 				141BD2AA1B6FB65E00327120 /* HMNavigationController.m */,
 				141BD2BC1B6FB94B00327120 /* HMNewsViewController.h */,
 				141BD2BD1B6FB94B00327120 /* HMNewsViewController.m */,
+				141BD2C51B70E4B700327120 /* HMReadingViewController.h */,
+				141BD2C61B70E4B700327120 /* HMReadingViewController.m */,
+				141BD2CE1B710B0F00327120 /* HMADViewController.h */,
+				141BD2CF1B710B0F00327120 /* HMADViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -138,6 +156,10 @@
 				141BD2B11B6FB65E00327120 /* HWLeftMenu.m */,
 				141BD2BF1B6FBAE400327120 /* HMTitleView.h */,
 				141BD2C01B6FBAE400327120 /* HMTitleView.m */,
+				141BD2C81B70F8B400327120 /* HMLeftMenuButton.h */,
+				141BD2C91B70F8B400327120 /* HMLeftMenuButton.m */,
+				141BD2CB1B70FE7A00327120 /* HMNavigationBar.h */,
+				141BD2CC1B70FE7A00327120 /* HMNavigationBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,6 +194,7 @@
 		14F9A5A51B6F927D00E16AD5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				141BD2D11B710B4100327120 /* AD.png */,
 				14F9A5AF1B6F927D00E16AD5 /* Main.storyboard */,
 				14F9A5B21B6F927D00E16AD5 /* Images.xcassets */,
 				14F9A5B41B6F927D00E16AD5 /* LaunchScreen.xib */,
@@ -279,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				141BD2D21B710B4100327120 /* AD.png in Resources */,
 				14F9A5CF1B6F9F9B00E16AD5 /* sidebar_bg@2x.jpg in Resources */,
 				14F9A5B11B6F927D00E16AD5 /* Main.storyboard in Resources */,
 				14F9A5B61B6F927D00E16AD5 /* LaunchScreen.xib in Resources */,
@@ -302,14 +326,18 @@
 			files = (
 				141BD2B51B6FB65E00327120 /* HMNavigationController.m in Sources */,
 				141BD2B81B6FB65E00327120 /* HWLeftMenu.m in Sources */,
+				141BD2CD1B70FE7A00327120 /* HMNavigationBar.m in Sources */,
 				141BD2BE1B6FB94B00327120 /* HMNewsViewController.m in Sources */,
 				141BD2B41B6FB65E00327120 /* HMMainViewController.m in Sources */,
 				141BD2C41B6FBDBD00327120 /* UIBarButtonItem+Extension.m in Sources */,
+				141BD2D01B710B0F00327120 /* HMADViewController.m in Sources */,
 				141BD2B31B6FB65E00327120 /* UIView+Extension.m in Sources */,
 				141BD2B21B6FB65E00327120 /* UIImage+UIImage_Extension.m in Sources */,
 				141BD2B71B6FB65E00327120 /* main.m in Sources */,
 				141BD2C11B6FBAE400327120 /* HMTitleView.m in Sources */,
 				141BD2B61B6FB65E00327120 /* AppDelegate.m in Sources */,
+				141BD2CA1B70F8B400327120 /* HMLeftMenuButton.m in Sources */,
+				141BD2C71B70E4B700327120 /* HMReadingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

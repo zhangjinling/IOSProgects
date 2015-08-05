@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+@class HWLeftMenu;
+
+@protocol HWLeftMenuDelegate <NSObject>
+
+@optional
+- (void)leftMenu:(HWLeftMenu *)menu didSelectButtonFromIndex:(int)index toIndex:(int)toIndex;
+
+@end
 
 @interface HWLeftMenu : UIView
-
+@property (nonatomic, weak) id <HWLeftMenuDelegate>delegate;
 @end
