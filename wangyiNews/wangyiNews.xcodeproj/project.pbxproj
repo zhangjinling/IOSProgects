@@ -22,6 +22,10 @@
 		141BD2CD1B70FE7A00327120 /* HMNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 141BD2CC1B70FE7A00327120 /* HMNavigationBar.m */; };
 		141BD2D01B710B0F00327120 /* HMADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141BD2CF1B710B0F00327120 /* HMADViewController.m */; };
 		141BD2D21B710B4100327120 /* AD.png in Resources */ = {isa = PBXBuildFile; fileRef = 141BD2D11B710B4100327120 /* AD.png */; };
+		141BD2D91B723F4600327120 /* HMRightMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141BD2D71B723F4600327120 /* HMRightMenuController.m */; };
+		141BD2DA1B723F4600327120 /* HMRightMenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141BD2D81B723F4600327120 /* HMRightMenuController.xib */; };
+		141BD2E01B72585200327120 /* HMRightCenterRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 141BD2DF1B72585200327120 /* HMRightCenterRow.m */; };
+		141BD2E21B72586400327120 /* Empty.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141BD2E11B72586400327120 /* Empty.xib */; };
 		14F9A5B11B6F927D00E16AD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F9A5AF1B6F927D00E16AD5 /* Main.storyboard */; };
 		14F9A5B31B6F927D00E16AD5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F9A5B21B6F927D00E16AD5 /* Images.xcassets */; };
 		14F9A5B61B6F927D00E16AD5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F9A5B41B6F927D00E16AD5 /* LaunchScreen.xib */; };
@@ -69,6 +73,12 @@
 		141BD2CE1B710B0F00327120 /* HMADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMADViewController.h; sourceTree = "<group>"; };
 		141BD2CF1B710B0F00327120 /* HMADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMADViewController.m; sourceTree = "<group>"; };
 		141BD2D11B710B4100327120 /* AD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AD.png; sourceTree = "<group>"; };
+		141BD2D61B723F4600327120 /* HMRightMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMRightMenuController.h; sourceTree = "<group>"; };
+		141BD2D71B723F4600327120 /* HMRightMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMRightMenuController.m; sourceTree = "<group>"; };
+		141BD2D81B723F4600327120 /* HMRightMenuController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMRightMenuController.xib; sourceTree = "<group>"; };
+		141BD2DE1B72585200327120 /* HMRightCenterRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMRightCenterRow.h; sourceTree = "<group>"; };
+		141BD2DF1B72585200327120 /* HMRightCenterRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMRightCenterRow.m; sourceTree = "<group>"; };
+		141BD2E11B72586400327120 /* Empty.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Empty.xib; sourceTree = "<group>"; };
 		14F9A5A21B6F927D00E16AD5 /* wangyiNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wangyiNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F9A5A61B6F927D00E16AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14F9A5B01B6F927D00E16AD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,6 +145,9 @@
 				141BD2C61B70E4B700327120 /* HMReadingViewController.m */,
 				141BD2CE1B710B0F00327120 /* HMADViewController.h */,
 				141BD2CF1B710B0F00327120 /* HMADViewController.m */,
+				141BD2D61B723F4600327120 /* HMRightMenuController.h */,
+				141BD2D71B723F4600327120 /* HMRightMenuController.m */,
+				141BD2D81B723F4600327120 /* HMRightMenuController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -160,6 +173,9 @@
 				141BD2C91B70F8B400327120 /* HMLeftMenuButton.m */,
 				141BD2CB1B70FE7A00327120 /* HMNavigationBar.h */,
 				141BD2CC1B70FE7A00327120 /* HMNavigationBar.m */,
+				141BD2DE1B72585200327120 /* HMRightCenterRow.h */,
+				141BD2DF1B72585200327120 /* HMRightCenterRow.m */,
+				141BD2E11B72586400327120 /* Empty.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,9 +318,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				141BD2DA1B723F4600327120 /* HMRightMenuController.xib in Resources */,
 				141BD2D21B710B4100327120 /* AD.png in Resources */,
 				14F9A5CF1B6F9F9B00E16AD5 /* sidebar_bg@2x.jpg in Resources */,
 				14F9A5B11B6F927D00E16AD5 /* Main.storyboard in Resources */,
+				141BD2E21B72586400327120 /* Empty.xib in Resources */,
 				14F9A5B61B6F927D00E16AD5 /* LaunchScreen.xib in Resources */,
 				14F9A5B31B6F927D00E16AD5 /* Images.xcassets in Resources */,
 			);
@@ -327,11 +345,13 @@
 				141BD2B51B6FB65E00327120 /* HMNavigationController.m in Sources */,
 				141BD2B81B6FB65E00327120 /* HWLeftMenu.m in Sources */,
 				141BD2CD1B70FE7A00327120 /* HMNavigationBar.m in Sources */,
+				141BD2D91B723F4600327120 /* HMRightMenuController.m in Sources */,
 				141BD2BE1B6FB94B00327120 /* HMNewsViewController.m in Sources */,
 				141BD2B41B6FB65E00327120 /* HMMainViewController.m in Sources */,
 				141BD2C41B6FBDBD00327120 /* UIBarButtonItem+Extension.m in Sources */,
 				141BD2D01B710B0F00327120 /* HMADViewController.m in Sources */,
 				141BD2B31B6FB65E00327120 /* UIView+Extension.m in Sources */,
+				141BD2E01B72585200327120 /* HMRightCenterRow.m in Sources */,
 				141BD2B21B6FB65E00327120 /* UIImage+UIImage_Extension.m in Sources */,
 				141BD2B71B6FB65E00327120 /* main.m in Sources */,
 				141BD2C11B6FBAE400327120 /* HMTitleView.m in Sources */,
