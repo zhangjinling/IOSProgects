@@ -34,6 +34,51 @@
                                     <action selector="readEmployee:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EcZ-DE-WR9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0H-7F-Skq">
+                                <rect key="frame" x="59" y="113" width="90" height="30"/>
+                                <state key="normal" title="删除员工信息">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteEmployee:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zn1-4x-Jps"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkc-vH-m5h">
+                                <rect key="frame" x="59" y="151" width="90" height="30"/>
+                                <state key="normal" title="修改员工信息">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="modifyEmployee:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SuU-T5-zOw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Qf-UY-Mhh">
+                                <rect key="frame" x="74" y="189" width="60" height="30"/>
+                                <state key="normal" title="模糊查询">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="likeSearch:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0C1-GO-NwG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsp-fr-KD5">
+                                <rect key="frame" x="81" y="227" width="60" height="30"/>
+                                <state key="normal" title="关联查询">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="manyTable:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CiL-VD-zBm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTK-FV-SUe">
+                                <rect key="frame" x="81" y="265" width="105" height="30"/>
+                                <state key="normal" title="添加员工和微博">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Employee_Status:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Nh8-o9-Sjh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

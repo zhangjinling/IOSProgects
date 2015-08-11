@@ -15,8 +15,11 @@
 		141BD3001B78D69100327120 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141BD2FE1B78D69100327120 /* LaunchScreen.xib */; };
 		141BD30C1B78D69100327120 /* b01_CoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 141BD30B1B78D69100327120 /* b01_CoreDataTests.m */; };
 		141BD3171B78D70900327120 /* Company.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 141BD3151B78D70900327120 /* Company.xcdatamodeld */; };
-		141BD31A1B78D78F00327120 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 141BD3191B78D78F00327120 /* Employee.m */; };
 		141BD31C1B78D89200327120 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141BD31B1B78D89200327120 /* CoreData.framework */; };
+		141BD31F1B7A3B1000327120 /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = 141BD31E1B7A3B1000327120 /* Department.m */; };
+		141BD3221B7A3BC400327120 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 141BD3211B7A3BC400327120 /* Employee.m */; };
+		141BD3251B7A430400327120 /* Weibo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 141BD3231B7A430400327120 /* Weibo.xcdatamodeld */; };
+		141BD3281B7A435100327120 /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 141BD3271B7A435100327120 /* Status.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,9 +47,14 @@
 		141BD30A1B78D69100327120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		141BD30B1B78D69100327120 /* b01_CoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = b01_CoreDataTests.m; sourceTree = "<group>"; };
 		141BD3161B78D70900327120 /* Company.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Company.xcdatamodel; sourceTree = "<group>"; };
-		141BD3181B78D78F00327120 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
-		141BD3191B78D78F00327120 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		141BD31B1B78D89200327120 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		141BD31D1B7A3B1000327120 /* Department.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Department.h; sourceTree = "<group>"; };
+		141BD31E1B7A3B1000327120 /* Department.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Department.m; sourceTree = "<group>"; };
+		141BD3201B7A3BC400327120 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		141BD3211B7A3BC400327120 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		141BD3241B7A430400327120 /* Weibo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Weibo.xcdatamodel; sourceTree = "<group>"; };
+		141BD3261B7A435100327120 /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Status.h; sourceTree = "<group>"; };
+		141BD3271B7A435100327120 /* Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Status.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +107,13 @@
 				141BD2FE1B78D69100327120 /* LaunchScreen.xib */,
 				141BD2EF1B78D69100327120 /* Supporting Files */,
 				141BD3151B78D70900327120 /* Company.xcdatamodeld */,
-				141BD3181B78D78F00327120 /* Employee.h */,
-				141BD3191B78D78F00327120 /* Employee.m */,
+				141BD3231B7A430400327120 /* Weibo.xcdatamodeld */,
+				141BD3261B7A435100327120 /* Status.h */,
+				141BD3271B7A435100327120 /* Status.m */,
+				141BD3201B7A3BC400327120 /* Employee.h */,
+				141BD3211B7A3BC400327120 /* Employee.m */,
+				141BD31D1B7A3B1000327120 /* Department.h */,
+				141BD31E1B7A3B1000327120 /* Department.m */,
 			);
 			path = b01_CoreData;
 			sourceTree = "<group>";
@@ -231,11 +244,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				141BD31A1B78D78F00327120 /* Employee.m in Sources */,
 				141BD2F81B78D69100327120 /* ViewController.m in Sources */,
 				141BD2F51B78D69100327120 /* AppDelegate.m in Sources */,
 				141BD2F21B78D69100327120 /* main.m in Sources */,
+				141BD3221B7A3BC400327120 /* Employee.m in Sources */,
 				141BD3171B78D70900327120 /* Company.xcdatamodeld in Sources */,
+				141BD3251B7A430400327120 /* Weibo.xcdatamodeld in Sources */,
+				141BD31F1B7A3B1000327120 /* Department.m in Sources */,
+				141BD3281B7A435100327120 /* Status.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +446,7 @@
 				141BD3111B78D69100327120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		141BD3121B78D69100327120 /* Build configuration list for PBXNativeTarget "b01_CoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +455,7 @@
 				141BD3141B78D69100327120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -449,6 +467,16 @@
 			);
 			currentVersion = 141BD3161B78D70900327120 /* Company.xcdatamodel */;
 			path = Company.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		141BD3231B7A430400327120 /* Weibo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				141BD3241B7A430400327120 /* Weibo.xcdatamodel */,
+			);
+			currentVersion = 141BD3241B7A430400327120 /* Weibo.xcdatamodel */;
+			path = Weibo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
