@@ -11,4 +11,6 @@
 @interface HMRightCenterRow : UIView
 
 + (instancetype)centerViewRow;
+@property (nonatomic, copy) NSString *icon;
+@property (nonatomic, copy) NSString *title;
 @end

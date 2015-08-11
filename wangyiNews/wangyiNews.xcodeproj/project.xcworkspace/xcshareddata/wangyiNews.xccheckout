@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>0BA80992-700A-4A01-BB3A-A945C130F2B0</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>wangyiNews</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>30EF90105DBD3601C4590188A0D7618C16A18DA0</key>
 		<string>github.com:zhangjinling/IOSProgects.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>wangyiNews/wangyiNews.xcodeproj/project.xcworkspace</string>
+	<string>wangyiNews/wangyiNews.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>30EF90105DBD3601C4590188A0D7618C16A18DA0</key>

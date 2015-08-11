@@ -42,6 +42,8 @@
 - (void)setupCenterViewRow: (NSString *)title icon:(NSString *)icon
 {
     HMRightCenterRow *row = [HMRightCenterRow centerViewRow];
+    row.title = title;
+    row.icon = icon;
     row.y = row.height * self.centerView.subviews.count;
     [self.centerView addSubview:row];
 //    UIView *centerRow = [[UIView alloc]init];

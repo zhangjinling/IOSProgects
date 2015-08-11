@@ -14,20 +14,35 @@
                     <rect key="frame" x="0.0" y="0.0" width="200" height="35"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
                     <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    <state key="normal" title="Button" image="promoboard_icon_apps">
+                    <state key="normal" title="Button">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="top_navigation_background_88" translatesAutoresizingMaskIntoConstraints="NO" id="A0E-Pz-ZX9">
+                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sidebar_nav_reading" translatesAutoresizingMaskIntoConstraints="NO" id="FvL-Ex-zLq">
+                    <rect key="frame" x="160" y="0.0" width="30" height="30"/>
+                </imageView>
+                <view alpha="0.10000000000000001" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1QT-bZ-rIV">
+                    <rect key="frame" x="0.0" y="35" width="200" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconView" destination="A0E-Pz-ZX9" id="ZI8-fz-muO"/>
+                <outlet property="ttileView" destination="vU6-yM-x3m" id="oNg-gF-QH4"/>
+            </connections>
             <point key="canvasLocation" x="358" y="333"/>
         </view>
     </objects>
     <resources>
-        <image name="promoboard_icon_apps" width="20" height="20"/>
+        <image name="sidebar_nav_reading" width="25" height="25"/>
+        <image name="top_navigation_background_88" width="320" height="44"/>
     </resources>
 </document>
