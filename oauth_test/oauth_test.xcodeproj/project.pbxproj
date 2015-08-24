@@ -23,8 +23,8 @@
 		141767EC1B822BBC001C5D24 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 141767E11B822BBC001C5D24 /* AFURLRequestSerialization.m */; };
 		141767ED1B822BBC001C5D24 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 141767E31B822BBC001C5D24 /* AFURLResponseSerialization.m */; };
 		141767EE1B822BBC001C5D24 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 141767E51B822BBC001C5D24 /* AFURLSessionManager.m */; };
-		141767F21B84ADBA001C5D24 /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 141767F11B84ADBA001C5D24 /* OrderedDictionary.m */; };
-		141767F51B84BE1C001C5D24 /* SortDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 141767F41B84BE1C001C5D24 /* SortDictionary.m */; };
+		141767FE1B86162A001C5D24 /* SortDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 141767FD1B86162A001C5D24 /* SortDictionary.m */; };
+		141943981B877F7F0069A2B3 /* HHTOauth.m in Sources */ = {isa = PBXBuildFile; fileRef = 141943971B877F7F0069A2B3 /* HHTOauth.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,10 +70,10 @@
 		141767E31B822BBC001C5D24 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		141767E41B822BBC001C5D24 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		141767E51B822BBC001C5D24 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		141767F01B84ADBA001C5D24 /* OrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedDictionary.h; sourceTree = "<group>"; };
-		141767F11B84ADBA001C5D24 /* OrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedDictionary.m; sourceTree = "<group>"; };
-		141767F31B84BE1C001C5D24 /* SortDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortDictionary.h; sourceTree = "<group>"; };
-		141767F41B84BE1C001C5D24 /* SortDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortDictionary.m; sourceTree = "<group>"; };
+		141767FC1B86162A001C5D24 /* SortDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortDictionary.h; sourceTree = "<group>"; };
+		141767FD1B86162A001C5D24 /* SortDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortDictionary.m; sourceTree = "<group>"; };
+		141943961B877F7F0069A2B3 /* HHTOauth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTOauth.h; sourceTree = "<group>"; };
+		141943971B877F7F0069A2B3 /* HHTOauth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTOauth.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,14 +119,15 @@
 				141767B11B822385001C5D24 /* AppDelegate.m */,
 				141767B31B822385001C5D24 /* ViewController.h */,
 				141767B41B822385001C5D24 /* ViewController.m */,
-				141767EF1B84ADBA001C5D24 /* OrderedDictionary */,
+				141767FC1B86162A001C5D24 /* SortDictionary.h */,
+				141767FD1B86162A001C5D24 /* SortDictionary.m */,
+				141943961B877F7F0069A2B3 /* HHTOauth.h */,
+				141943971B877F7F0069A2B3 /* HHTOauth.m */,
 				141767D21B822BBC001C5D24 /* AFNetworking */,
 				141767B61B822385001C5D24 /* Main.storyboard */,
 				141767B91B822385001C5D24 /* Images.xcassets */,
 				141767BB1B822385001C5D24 /* LaunchScreen.xib */,
 				141767AC1B822384001C5D24 /* Supporting Files */,
-				141767F31B84BE1C001C5D24 /* SortDictionary.h */,
-				141767F41B84BE1C001C5D24 /* SortDictionary.m */,
 			);
 			path = oauth_test;
 			sourceTree = "<group>";
@@ -181,15 +182,6 @@
 				141767E51B822BBC001C5D24 /* AFURLSessionManager.m */,
 			);
 			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		141767EF1B84ADBA001C5D24 /* OrderedDictionary */ = {
-			isa = PBXGroup;
-			children = (
-				141767F01B84ADBA001C5D24 /* OrderedDictionary.h */,
-				141767F11B84ADBA001C5D24 /* OrderedDictionary.m */,
-			);
-			path = OrderedDictionary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,16 +286,16 @@
 			files = (
 				141767E61B822BBC001C5D24 /* AFHTTPRequestOperation.m in Sources */,
 				141767B51B822385001C5D24 /* ViewController.m in Sources */,
+				141767FE1B86162A001C5D24 /* SortDictionary.m in Sources */,
 				141767E71B822BBC001C5D24 /* AFHTTPRequestOperationManager.m in Sources */,
 				141767E91B822BBC001C5D24 /* AFNetworkReachabilityManager.m in Sources */,
 				141767ED1B822BBC001C5D24 /* AFURLResponseSerialization.m in Sources */,
 				141767EB1B822BBC001C5D24 /* AFURLConnectionOperation.m in Sources */,
 				141767EA1B822BBC001C5D24 /* AFSecurityPolicy.m in Sources */,
-				141767F51B84BE1C001C5D24 /* SortDictionary.m in Sources */,
+				141943981B877F7F0069A2B3 /* HHTOauth.m in Sources */,
 				141767E81B822BBC001C5D24 /* AFHTTPSessionManager.m in Sources */,
 				141767EC1B822BBC001C5D24 /* AFURLRequestSerialization.m in Sources */,
 				141767EE1B822BBC001C5D24 /* AFURLSessionManager.m in Sources */,
-				141767F21B84ADBA001C5D24 /* OrderedDictionary.m in Sources */,
 				141767B21B822385001C5D24 /* AppDelegate.m in Sources */,
 				141767AF1B822384001C5D24 /* main.m in Sources */,
 			);
@@ -500,6 +492,7 @@
 				141767CE1B822385001C5D24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		141767CF1B822385001C5D24 /* Build configuration list for PBXNativeTarget "oauth_testTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +501,7 @@
 				141767D11B822385001C5D24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

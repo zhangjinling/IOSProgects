@@ -9,9 +9,8 @@
 #import "ViewController.h"
 #import <CommonCrypto/CommonDigest.h>
 #import "AFNetworking.h"
-#import "OrderedDictionary.h"
 #import "SortDictionary.h"
-
+#import "HHTOauth.h"
 @interface ViewController ()
 
 @end
@@ -21,46 +20,50 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+//
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    //30135f69d25be9ca5e7e459c8693833b
+    //d7c74bd2e161cd4196cfb00e0f621585
+    //resttime=1440137713&sessionkey=cclient&classid=385&restauth=d7c74bd2e161cd4196cfb00e0f621585&classname=%E6%B5%8B%E8%AF%951&uid=77302
+//
+    dict[@"classid"] = @"385";
+    dict[@"classname"] = @"测试1";
+    dict[@"uid"] = @"77302";
 
-    MutableOrderedDictionary *dict = [MutableOrderedDictionary dictionary];
-    [dict insertObject:@"76104" forKey:@"teacherid" atIndex:0];
-    [dict insertObject:@"10" forKey:@"pageSize" atIndex:0];
-    [dict insertObject:@"1" forKey:@"currentPage" atIndex:0];
-
-
-    
+    dict[@"sessionkey"] =@"cclient";
+    NSLog(@"未被处理的：dict:%@",dict);
     NSDate* dat = [NSDate dateWithTimeIntervalSinceNow:0];
     NSTimeInterval a=[dat timeIntervalSince1970];
     NSString *timeString = [NSString stringWithFormat:@"%f", a];
-    dict[@"time"] = timeString;
-    
-    dict[@"secret"] = @"52f4133a5d45";
+    dict[@"resttime"] = @"1440137713";
 
-    NSLog(@"%@",[[SortDictionary sortDictionary:dict] stringByAppendingString:dict[@"secret"]]);
-//    for (NSString *str in sortDict) {
-//        //queryString = [queryString stringByAppendingString:[NSString stringWithFormat:@"%@=%@&",str,sortDict[str]]];
-//        NSLog(@"%@",str);
-//    }
+    NSString *queryString = [SortDictionary sortDictionary:dict];
+    dict[@"secret"] = @"2635220a1f53";
+    NSLog(@"queryString:%@",queryString);
+    NSString *preMD5 = [queryString stringByAppendingString:dict[@"secret"] ];
+
+    NSLog(@"MD5后：%@",[self md5:preMD5]);
+    dict[@"secret"] = @"2635220a1f53";
+
+    NSString *preString =[SortDictionary sortDictionary:dict];
+    NSString *pprestring = [preString stringByAppendingString:dict[@"secret"]];
+    NSLog(@"加密前：%@",preString);
+    NSString *restauth = [NSString stringWithString:[self md5:pprestring]];
+    restauth = [restauth lowercaseString];
     
-//    dict[@"secret"] = @"52f4133a5d45";
-//    NSLog(@"queryString:%@",queryString);
-//    NSString *preMD5 = [queryString stringByAppendingString:dict[@"secret"] ];
-//
-//
-//
-//    NSLog(@"MD5后：%@",[self md5:preMD5]);
-    NSString *restauth = [NSString stringWithString:[self md5:[[SortDictionary sortDictionary:dict] stringByAppendingString:dict[@"secret"]]]];
+
     
-    [dict insertObject:restauth forKey:@"restauth" atIndex:0];
+    dict[@"restauth"] =restauth;
     NSLog(@"restauth:%@",dict);
-//
-//    
+
+    [dict removeObjectForKey:@"secret"];
     AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
-    [mgr GET:@"http://edu.honghe-tech.com/api/hwork/howeowrkList" parameters:dict success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
-        NSLog(@"%@",responseObject);
+    [mgr POST:@"http://edu.honghe-tech.com/api/group/teacherByParentid" parameters:dict success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
+        NSLog(@"************%@",responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@",error.localizedDescription);
     }];
+
 }
 
 -(NSString *)md5:(NSString *)str {
@@ -85,9 +88,31 @@
      */
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+/**
+ *  测设api
+ *
+ *  @param sender 点击的button
+ */
+- (IBAction)testTheOauth:(UIButton *)sender {
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    //?sessionkey=cclient&
+//    resttime=1440041669&
+//    restauth=34aaf25463e733632d61c40066b9d2c8&
+//    teacherId=76104
+
+    dict[@"classid"] = @"385";
+    dict[@"classname"] = @"测试1";
+    dict[@"uid"] = @"77302";
+    NSMutableDictionary *parama = [NSMutableDictionary dictionaryWithDictionary:[HHTOauth HHTOauthWithDictionary:dict]];
+    NSLog(@"test:%@",parama);
+    
+    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
+    [mgr GET:@"http://edu.honghe-tech.com/api/appnew/searchIndexs" parameters:parama success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"请求成功：%@",responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@",error.localizedDescription);
+    }];
 }
 
 @end
